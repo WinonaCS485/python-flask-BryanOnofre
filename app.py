@@ -45,7 +45,7 @@ def cakes():
 
 @app.route('/database')
 def database():
-    return 'Yummy database!'
+     return render_template('database.html', output = output )
 
 @app.route('/hello/<name>')
 def hello(name):
