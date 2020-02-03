@@ -43,6 +43,10 @@ def index():
 def cakes():
     return render_template('cakes.html')
 
+@app.route('/page')
+def page():
+     return render_template('page.html')
+
 @app.route('/database')
 def database():
      return render_template('database.html', output = output )
